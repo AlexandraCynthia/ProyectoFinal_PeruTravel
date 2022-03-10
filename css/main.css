@@ -184,3 +184,9 @@ p {
   background-repeat: no repeat;
   background-size: cover;
   color: white; }
+
+@media (max-width: 768px) {
+  .tituloencabezado {
+    height: 550px; }
+  .btn-info {
+    margin-left: 30%; } }
