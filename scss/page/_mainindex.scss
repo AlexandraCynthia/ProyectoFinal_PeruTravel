@@ -1,6 +1,5 @@
 
 .tituloencabezado{
-
   background-image:url(../assets/images/montanacolores.jpg);
   height: 450px;
   font-size: 25px;
@@ -17,6 +16,7 @@ padding: 0px;
 width: 100%;
 }
 
+
 .btn-info{
 margin-left: 40%;
 background: #630606;
@@ -28,18 +28,8 @@ color: #D9CE3F;
 background: #630606;
 }
 
-.tit2{
-display: flex;
-justify-content: center;
-}
 
-.tit1{
-background: dimgray;
-color: white;
-text-shadow: 2px 2px 6px black;
-@extend .tit2;
-
-}
+//Uso de extend
 
 .section1{
 	display: block;
@@ -68,4 +58,18 @@ height: 400px;
 background: $costa;
 background-repeat: no-repeat;
 background-size:cover ;
+}
+
+//uso de extend para reutilizar en tit1
+
+.tit2{
+display: flex;
+justify-content: center;
+color: #062C30;
+}
+
+.tit1{
+background: dimgray;
+text-shadow: 2px 2px 6px black;
+@extend .tit2;
 }

@@ -17,6 +17,10 @@ background-size: cover;
   box-shadow: 2px 2px 5px black;
 }
 
+
+
+// Uso de extend
+
 .tit3{
 @extend .tit2;
 flex-direction: column;

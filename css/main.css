@@ -87,15 +87,6 @@ html, body {
   color: #D9CE3F;
   background: #630606; }
 
-.tit2, .tit1, .tit3 {
-  display: flex;
-  justify-content: center; }
-
-.tit1 {
-  background: dimgray;
-  color: white;
-  text-shadow: 2px 2px 6px black; }
-
 .section1, .sectionB, .sectionC, .sectionD {
   display: block;
   width: 100%; }
@@ -117,6 +108,15 @@ html, body {
   background: url(https://s03.s3c.es/imag/_v0/770x420/3/4/8/Costa-verde.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
+
+.tit2, .tit1, .tit3 {
+  display: flex;
+  justify-content: center;
+  color: #062C30; }
+
+.tit1 {
+  background: dimgray;
+  text-shadow: 2px 2px 6px black; }
 
 .tit1 {
   display: flex;
@@ -161,6 +161,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.form-control {
+  background-color: #B7CADB;
+  border-radius: 0.2;
+  box-shadow: -10px 10px rgba(0, 0, 0, 0.5); }
 
 #galeria img {
   width: 100%;

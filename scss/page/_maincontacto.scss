@@ -4,3 +4,22 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
+
+
+
+//Uso de maps - mapget
+
+$estilos:(
+	color: #B7CADB,
+	borde: 10% / 50%,
+	colorborde: black,
+	sombra:  -10px 10px rgba(0,0,0,0.5)
+);
+
+.form-control{
+	background-color: map-get($estilos, color);
+	border-radius: map-get($estilos,borde);
+	box-shadow: map-get($estilos,sombra);
+
+}
