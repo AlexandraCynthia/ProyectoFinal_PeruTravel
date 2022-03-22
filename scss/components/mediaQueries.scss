@@ -1,11 +1,74 @@
+//media query para index.html
+
 @media(max-width: 768px){
 
-.tituloencabezado{
-  height: 550px;
- }
+  .tituloencabezado{
+    height: 550px;
+   }
 
-.btn-info{
-margin-left: 30%;
+  .btn-info{
+  margin-left: 30%;
+  }
+
 }
 
-}
+
+//medida query para promociones.html
+
+
+@media(max-width: 768px){
+.containerGRID{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:120px 100px 300px 50px 100px 100px ;
+  grid-auto-flow: row;
+  grid-auto-columns:1fr;
+  grid-template-areas:
+  "header"
+  "tit1"
+  "imagenp"
+  "tit2"
+  "tarjeta"
+  "foo";
+  }
+
+  .header{
+      .imagen_logo{
+       display: flex;
+       align-items: center;
+       width: 60%;
+       height: auto;
+       -moz-border-radius: 50%;
+       -webkit-border-radius: 50%;
+       border-radius: 50%;
+       }
+      .enlaces{
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      margin-top: 5px;
+      padding: 5px;
+      }
+      .encab{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-decoration: none;
+      }
+
+     }
+
+      .tarjeta{
+        .btnn{
+          font-size: 16px;
+        }
+        .tarjeta1{
+          .contenido{
+            font-size: 11px;
+          }
+        }
+      }
+  }
+
+

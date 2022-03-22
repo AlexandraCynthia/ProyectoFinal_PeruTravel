@@ -1,4 +1,3 @@
-
 .tituloencabezado{
   background-image:url(../assets/images/montanacolores.jpg);
   height: 450px;
@@ -7,8 +6,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1rem;
   overflow-x: hidden;
+}
+.titulo__bienvenida{
+	padding-top: 35px;
 }
 
 .container-fluid{
