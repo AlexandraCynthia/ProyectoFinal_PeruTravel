@@ -1,4 +1,5 @@
-Proyecto: Perú Blog
+Proyecto: Perú Travel
+
 
 Keywords agregadas: peru destinos viajes lima costa verde puno cusco paisajes peruanos turismo
 
@@ -18,3 +19,5 @@ ____________________________
 
 _maincontacto.scss para los background de input en formulario.
 
+
+Se usó CSS nativo en promociones.html
