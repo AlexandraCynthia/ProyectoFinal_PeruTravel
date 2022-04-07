@@ -1,9 +1,9 @@
-//GRIDS para promociones.html
+//GRIDS para promociones.html - sin boostrap
 
 
 *{
-   margin: 0px;
-   padding: 0px;
+  margin: 0px;
+  padding: 0px;
   }
 
 body{
@@ -11,10 +11,10 @@ font-family: 'Varela Round', sans-serif;
 }
 
 .encabez1{
-   list-style-type: none;
-   margin: 5px;
-   padding-top: 30px;
-   text-decoration: none;
+list-style-type: none;
+margin: 5px;
+padding-top: 35px;
+text-decoration: none;
 }
 
 .encab{
@@ -31,7 +31,6 @@ text-decoration: none;
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      border-radius: 50%;
-
 }
 
 .enlaces{
@@ -49,20 +48,20 @@ text-decoration: none;
 }
 
 nav .navegador{
-width: 80%;
+width: 100%;
 display: flex;
 align-items: center;
 margin-right: -100px;
 }
-
 
 .tarjeta1{
 border: 1px solid #d0d0d0;
 margin-bottom: 25px;
 }
 
-// Boton dinamico
 
+
+// Boton dinamico
 
 .boton2 {
 	width: auto;
@@ -75,7 +74,7 @@ margin-bottom: 25px;
 	margin: 20px auto;
 	border: none;
 	padding: 10px 44px;
-	font-size: 25px;
+	font-size: 20px;
 	position: relative;
 	&::before{
 		transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -103,18 +102,18 @@ margin-bottom: 25px;
 	&.rounded{
 		border-radius:50px;
 		& .text-green{
-			color:#00F0B5;
+			color:yellow;
 			mix-blend-mode: difference;
 		}
 		
 		&::before{
 			border-radius: 50px;
 			width: 25%;
-			background: #00F0B5;
+			background: #008E89;
 		}
 		&:hover{
 			&::before{
-			background: #00F0B5;
+			background: #864879;
 				width: 100%;
 			}
 		}	
@@ -131,7 +130,7 @@ margin-bottom: 25px;
 .containerGRID{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-auto-rows:120px 100px 300px 50px 100px 100px ;
+	grid-auto-rows:100px 100px 100px 50px 100px 120px ;
 	grid-auto-flow: row;
 	grid-auto-columns:1fr;
 	grid-template-areas:
@@ -151,6 +150,7 @@ margin-bottom: 25px;
    	justify-content: space-evenly;
    	background: url(https://images.unsplash.com/photo-1642790391931-5c92f126809f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
    	text-decoration: none;
+   	heigth:200px;
  	}
 
  	.tit1{
@@ -162,6 +162,7 @@ margin-bottom: 25px;
  	.imagenp{
 	grid-area: imagenp;
 	display: flex;
+
  	}
 
  	.tit2{
@@ -176,33 +177,43 @@ margin-bottom: 25px;
 	flex-direction: row;
 	align-items: stretch;
 	justify-content: center;
-		
+	padding-bottom: 15px;
+
+				.tarjeta1{
+					.imgprom{
+					 	display: flex;
+					 	align-items: center;
+					 	width: 80%;
+					 	height: auto;
+					 	padding-right: 15px;
+					 	padding-top: 15px;
+					 		
+ 						}
+					}
+				.contenido{
+				 	display: flex;
+				 	flex-direction: column;
+				 	align-items: center;
+				 	justify-content: center;
+				 	background-color: #F3E9DD;
+				 	margin: 10px;
+				 	padding-top: 5px;
+				 	margin-bottom: 20px;
+			 	}
  	}
 
  	.foo{
- 	grid-area: foo;
- 	display: flex;
+   grid-area: foo;
+   display:flex;
+ 		.fo{
+ 			width:35%;
+ 			padding-top:1%;
+ 		}
+
  	}
 
 
- 	.imgprom{
- 		display: flex;
- 		align-items: center;
- 		width: 90%;
- 		height: auto;
- 		padding: 20px;
- 	}
-
- 	.contenido{
- 		display: flex;
- 		flex-direction: column;
- 		align-items: center;
- 		justify-content: center;
- 		background-color: #F3E9DD;
- 		margin: 20px;
- 		padding-top: 10px;
- 		padding-right: 15px;
- 	}
+ 
 
 
 

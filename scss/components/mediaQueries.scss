@@ -4,71 +4,220 @@
 
   .tituloencabezado{
     height: 550px;
+    font-size: 18px;
+    color: black;
+    text-shadow: 2px 2px #ff0000;
    }
 
-  .btn-info{
-  margin-left: 30%;
+  .titulo_secundario p{
+    padding-right: 5%;
+    }
+
+  .sectionef{
+    font-size: 25px;
+    }
+
+
+  .titulo__bienvenida{
+      h1{
+        font-size: 30px;
+      }
+    }
+
+ .sectionB{
+  padding-right:15px;
+      p{
+        font-size: 20px;
+      }
+   }
+
+  .text-center .titulosec{
+    color: white;
   }
 
 }
 
 
-//medida query para promociones.html
-
+//medida query para noticias.html
 
 @media(max-width: 768px){
-.containerGRID{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows:120px 100px 300px 50px 100px 100px ;
-  grid-auto-flow: row;
-  grid-auto-columns:1fr;
-  grid-template-areas:
-  "header"
-  "tit1"
-  "imagenp"
-  "tit2"
-  "tarjeta"
-  "foo";
+
+  .tit1{
+  font-size: 25px;
   }
+
+  .letraN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+    h3{
+      font-size: 20px;
+      align-items: center;
+      text-shadow: 2px 2px white;
+    }
+  }
+
+.bgnot{
+padding-right: 0px !important;
+}
+
+
+}
+
+
+//medida query para gastronomia.html
+
+  @media(max-width: 768px){
+    .tit1 h1{
+      font-size: 24px;
+    }
+
+    .titulop {
+      font-size: 35px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imgf{
+    width: 90%;
+    margin-left: -15%
+    }
+  }
+
+
+
+//medida query para fotos.html
+
+@media(max-width: 768px){
+.tit3 h1 p{
+  justify-content: center;
+}
+
+}
+
+
+
+//medida query para contacto.html
+
+@media(max-width: 768px){
+  .ubicacion{
+    width:95% !important;
+  }
+
+}
+
+
+
+//medida query para promociones.html
+
+@media(max-width: 768px){
 
   .header{
+      padding-bottom: 15px;
+
       .imagen_logo{
-       display: flex;
-       align-items: center;
-       width: 60%;
-       height: auto;
-       -moz-border-radius: 50%;
-       -webkit-border-radius: 50%;
-       border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
        }
+
       .enlaces{
-      text-decoration: none;
-      font-size: 15px;
-      color: white;
-      margin-top: 5px;
-      padding: 5px;
+      font-size: 20px;
+      font-weight: bold;
       }
-      .encab{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: flex-start;
-      text-decoration: none;
-      }
+    
+    }
 
-     }
+    .contenido{
+      font-size:12px;
+    }
+    .text-green{
+      display:flex;
+      flex-direction:row;
+      font-size:12px;
+    }
 
-      .tarjeta{
-        .btnn{
-          font-size: 16px;
-        }
-        .tarjeta1{
-          .contenido{
-            font-size: 11px;
-          }
-        }
-      }
+
+    .tarjeta .tarjeta1 .imgprom {
+    display: flex;
+    align-items: center;
+    width: 95% !important;
+    height: auto;
+    padding-left: 15px !important;
+   
+    }
+
+
+  .boton2 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  //border: 2px solid black;
+}
+
+.btnn{
+  margin: 10px auto;
+  border: none;
+  padding: 10px 30px;
+  font-size: 14px;
+  position: relative;
+  &::before{
+    transition: all 5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+
+  & .btn-text{
+    color: white;
+    // check out mdn docs for different types of blend modes. 
+    mix-blend-mode: difference;
+  }
+  &:hover{
+    &::before{
+      background: black;
+      width: 50%;
+    }
+  }
+  //rounded btn styles
+  &.rounded{
+    border-radius:30px;
+    & .text-green{
+      color:yellow;
+      mix-blend-mode: difference;
+    }
+    
+    &::before{
+      border-radius: 30px;
+      width: 25%;
+      background: #008E89;
+    }
+    &:hover{
+      &::before{
+      background: #864879;
+        width: 100%;
+      }
+    } 
+  }
+}
+    
+
+ .fo{
+      width:50% !important;
+      padding-top:1%;
+     
+    }
+
+  
+
+
+}
 
 

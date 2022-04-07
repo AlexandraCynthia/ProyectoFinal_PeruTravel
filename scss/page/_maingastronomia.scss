@@ -1,29 +1,52 @@
-.ceviche{
+
+.platos{
 display: flex;
-width: 100%;
-height: 300px;
-background-image: $ceviche;
-background-repeat: no-repeat;
-background-size: cover;
-font-weight: bold;
-font-size: 20px;
+width: 70%;
+height: auto;
+border-radius:50%; 
 justify-content: center;
+align-content: center;
+margin-left: 15%;
 }
 
-.brasa{
-display: flex;
-width: 100%;
-height: 400px;
-background-image: $brasa;
-background-repeat: no-repeat;
-background-size: cover;
-font-weight: bold;
-font-size: 20px;
-justify-content: center;
-}
 
-p{
-padding: 14px 14px;
+.comidas{
 display: flex;
 text-align: justify;
+margin-left: 15%;
+margin-right: 10%;
+justify-content: center;
+background-color: #E4D1B9;
+}
+
+
+.parrafG{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 80%;
+	height: auto;
+	background-color: #FBF8F1
+}
+
+
+
+.titulop{
+	font-family: "Great Vibes", cursive;
+	font-size: 45px;
+	color: #990707;
+	display:flex;
+	justify-content: center;
+	background-color: #E4D1B9;
+}
+
+
+.imgf{
+	display: flex;
+	padding-left:40%;
+	background-color: #E4D1B9;
+}
+
+.container-g{
+background-color: #E4D1B9;
 }
